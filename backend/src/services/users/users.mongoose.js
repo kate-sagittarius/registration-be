@@ -9,7 +9,20 @@ const mongoose = require('mongoose');
 
 let moduleExports = merge({},
   // !<DEFAULT> code: model
-  {},
+  {
+    email: {
+      type: String,
+      required: true
+    },
+    nickname: {
+      type: String,
+      required: true
+    },
+    password: {
+      type: String,
+      required: true
+    }
+  },
   // !end
   // !code: moduleExports // !end
 );

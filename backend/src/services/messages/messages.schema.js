@@ -13,7 +13,11 @@ let schema = {
 
   // Required fields.
   required: [
-    // !code: schema_required // !end
+    // !code: schema_required
+    'id',
+    'userId',
+    'text',
+    // !end
   ],
   // Fields with unique values.
   uniqueItemProperties: [
@@ -22,7 +26,11 @@ let schema = {
 
   // Fields in the model.
   properties: {
-    // !code: schema_properties // !end
+    // !code: schema_properties
+    id: { type: 'ID' },
+    userId: { type: 'ID' },
+    text: {},
+    // !end
   },
   // !code: schema_more // !end
 };

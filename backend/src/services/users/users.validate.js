@@ -17,9 +17,26 @@ let base = merge({},
   {
     title: "Users",
     description: "Users database.",
-    required: [],
+    required: [
+      "email",
+      "nickname",
+      "password"
+    ],
     uniqueItemProperties: [],
-    properties: {}
+    properties: {
+      id: {
+        type: ID
+      },
+      email: {
+        type: "string"
+      },
+      nickname: {
+        type: "string"
+      },
+      password: {
+        type: "string"
+      }
+    }
   },
   // !end
   // !code: base_more // !end

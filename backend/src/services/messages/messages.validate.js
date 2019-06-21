@@ -17,9 +17,23 @@ let base = merge({},
   {
     title: "Messages",
     description: "Messages database.",
-    required: [],
+    required: [
+      "id",
+      "userId",
+      "text"
+    ],
     uniqueItemProperties: [],
-    properties: {}
+    properties: {
+      id: {
+        type: ID
+      },
+      userId: {
+        type: ID
+      },
+      text: {
+        type: "string"
+      }
+    }
   },
   // !end
   // !code: base_more // !end

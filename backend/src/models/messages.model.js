@@ -35,9 +35,11 @@ let moduleExports = function (app) {
   // eslint-disable-next-line no-unused-vars
   messages.associate = function (models) {
     // Define associations here for foreign keys
-    //   - No foreign keys defined.
+    //   - userId
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
-    // !code: sequelize_associations // !end
+    // !code: sequelize_associations
+    messages.belongsTo(models.users);
+    // !end
   };
 
   // !code: sequelize_func_return // !end

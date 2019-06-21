@@ -9,7 +9,16 @@ const mongoose = require('mongoose');
 
 let moduleExports = merge({},
   // !<DEFAULT> code: model
-  {},
+  {
+    userId: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true
+    },
+    text: {
+      type: String,
+      required: true
+    }
+  },
   // !end
   // !code: moduleExports // !end
 );

@@ -114,3 +114,4 @@ compiled/
 # Others
 lib/
 data/
+registration_backend.sqlite

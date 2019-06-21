@@ -13,7 +13,25 @@ const DataTypes = Sequelize.DataTypes;
 //   password:   { type: DataTypes.STRING, allowNull: false },
 let moduleExports = merge({},
   // !<DEFAULT> code: sequelize_model
-  {},
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
+    },
+    email: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    nickname: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    password: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    }
+  },
   // !end
   // !code: moduleExports // !end
 );
